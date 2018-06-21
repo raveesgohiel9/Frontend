@@ -1,0 +1,234 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 Jun, 2018, 11:10:28 AM
+    Author     : ravi_gohil999
+*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    width:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background-color: white;
+}
+html{
+    font-family: "Helvetica neue","sans-serif","Signika";
+    
+}
+#topbar{
+    overflow: hidden;
+    background-color:#000080;
+    line-height: 2.5em;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+/*
+ * Main content
+ */
+#main {
+    margin-top: 2.5em; /* Add a top margin to avoid content overlay */
+    padding:1em;
+    
+}
+.flag-top{
+    background: url('../img/indianflag.jpg');
+    width:3em;
+    height:1.5em;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.row{
+    
+}
+.column{
+    display:flex;
+    align-items:stretch;
+}
+.column-chid{
+    flex:1;
+}
+.align-center{
+    text-align: center;
+}
+.top-column-third-1{
+    flex:1;
+    border:1px;
+    align-items: center;
+    justify-content: center;
+    align-content:center;
+    color:#ffffff;
+    text-align: left;
+    padding-left: 10px;
+}
+.top-column-third-2{
+    flex:1;
+    color:#ffffff;
+    text-align: center;
+    margin:auto;
+}
+.top-column-third-3{
+    flex:1;
+    border:1px;
+    align-items: center;
+    justify-content: center;
+    align-content:center;
+    color:#ffffff;
+    text-align: right;
+    padding-right: 10px;
+}
+.top-bar-image{
+    width:3em;
+    height:1.5em;
+}
+.add-new-corruption-title{
+    display:block;
+}
+.add-new-corruption{
+    display:none;
+    border: 1px;
+    border-style: dotted;
+    border-color: #000080;
+    max-width:100%;
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    transition: 0.5s
+}
+.card{
+    
+    padding:0;
+    /*
+    background:#dedede;
+    */
+    
+}
+.cardbox{
+    margin:10px auto 0 auto;
+    padding:5px;
+}
+.back-shadow{
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2),0 6px 15px 0 rgba(0, 0, 0, 0.1);
+}
+.grey-gradient{
+    background:linear-gradient(#eeeeee,#dad7d7);
+}
+form{
+    display:block;
+    width:100%;
+    max-width:100%;
+}
+.searchfield{
+    max-width:90%;
+    width:90%;
+    padding:10px;
+    margin:10px 10px;
+    
+}
+.textfield{
+    background:#f5f5f5;
+    padding:0.3em;
+    margin: 0.3em 0.2em;
+    border:1px;
+    border-color: #d1d1ec;
+    border-style: solid;
+    border-radius: 10px;
+    width:100%;
+    font-size: 1em;
+}
+.descriptiontext{
+    height:4em;
+}
+.button{
+    line-height: 2em;
+    width:5em; 
+    margin: 10px 0px;
+}
+.button-green{
+    background: #138808;
+}
+.button-orange{
+    background: #FF9933;
+}
+.text-color-white{
+    color:#f5f5f5;
+}
+.sidenav{
+    width:0;
+    height:100%;
+    position:fixed;
+    z-index:1;
+    top:2.5em;
+    left:0;
+    overflow-x: hidden;
+    transition:0.3s;
+    background-color: #000080;
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #ffffff;
+    border-top: 0;
+    border-right: 0px;
+    border-left:0px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #ffffff;
+    display: block;
+    transition: 0.2s;
+}
+.content{
+    
+}
+@media(min-width:768px){
+    #main{
+        display: flex;
+        margin:0;
+        padding: 0;
+    }
+    .sidenav{
+        
+        top:2.5em;
+        left:0;
+        overflow-x: hidden;
+        background-color: #000080;
+        flex:1;
+        position: relative;
+        height:100%;
+    }
+    .content{
+        top:2.5em;
+        flex:4;
+        position: relative;
+        padding: 10px;
+    }
+    .top-column-third-1{
+        
+    }
+    .card{
+        display: flex;
+        padding:5px;
+    }
+    .cardbox{
+        flex:1;
+        justify-content: space-between;
+        margin:auto 10px auto auto;
+        padding: 5px;
+    }
+}
+
